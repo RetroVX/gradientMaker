@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+    <title>Gradient Maker</title>
+    <script type="text/javascript" src="js/randomColor.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <link rel='stylesheet' href='css/simple.css'>
+</head>
+
+<body>
+    <div class="sideNav">
+        <h1 id="header" style="text-align:center;">Gradient Maker</h1>
+        <p style="text-align:center;">Generate Amazing Gradients for Inspiration</p>
+        <h4 style="text-align:center;">Press SPACE For A Random Gradient</h4>
+        <textarea id="textArea" style="height:60px;font-size:14px;" placeholder="Enter CSS here to edit the body tag"></textarea>
+        <form id="customForm">
+            <label for="color1">Color One</label>
+            <input type="text" id="color1" class="inputs">
+            <label for="color2">Color Two</label>
+            <input type="text" id="color2" class="inputs">
+            <label for="degree">Angle</label>
+            <input type="number" id="degree" class="inputs">
+        </form>
+        <button id="executeFormBtn">CUSTOM GRADIENT</button>
+        <button id="btn">RANDOM GRADIENT</button>
+    </div>
+
+</body>
+
+</html>
