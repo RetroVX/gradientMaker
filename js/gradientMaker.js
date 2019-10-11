@@ -2,7 +2,7 @@ import miniCSS from "./mini-css.min.js";
 
 // create a new miniCSS instance and create a stylesheet
 const css = new miniCSS().createStyleSheet();
-// get 100 random light colors from the randomColor lib
+// get 250 random light colors from the randomColor lib
 const colors = randomColor({luminosity: 'light', count: 250});
 
 
@@ -24,9 +24,12 @@ export const generateGradient = function(color1, color2, degree) {
 export const randomGenerate = function() {
     const startColor1 = randomFromArray(colors);
     const startColor2 = randomFromArray(colors);
-    generateGradient(startColor1, startColor2, -45);
+    generateGradient(startColor1, startColor2, randomInt(360));
 }
 
+function randomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+} 
 
 // helper function to get a random item from an array
 function randomFromArray(array) {

@@ -42,10 +42,9 @@ html, body {
 
 .sideNav {
     float: left;
-    height: 100%;
     overflow: hidden;
     padding: 10px;
-    background-color: #FAFAFA;
+    background-color: #fafafaab;
     text-rendering: optimizeLegibility;
     transition: width .35s;
     width: 30%;
